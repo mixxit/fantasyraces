@@ -1,0 +1,29 @@
+name: FantasyRaces
+main: net.gamerservices.fantasyraces.fantasyraces
+version: 0.03
+website: http://www.gamerservices.net
+author: Mixxit
+database: true
+description: >
+             Basic race functionality.
+             This plugin allows a player to define his race
+commands:
+  race:
+    aliases: [setrace]
+    description: Sets your current race
+    usage: |
+           /<command> [race]
+           Example: /<command> Mysmaal
+  name:
+    aliases: [setname]
+    description: Sets your current name
+    usage: |
+           /<command> [name]
+           Example: /<command> Michael
+           
+  forcetitle:
+    aliases: [forceplayertitle]
+    description: Sets a players title
+    usage: |
+           /<command> [name]
+           Example: /<command> Michael the Paladin
