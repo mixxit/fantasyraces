@@ -35,6 +35,7 @@ System.out.println(desc.getFullName() + " has been disabled");
 	getCommand("race").setExecutor(new SetRace(this));
 	getCommand("name").setExecutor(new setName(this));
 	getCommand("findName").setExecutor(new findName(this));
+	getCommand("findDisplayName").setExecutor(new findDisplayName(this));
 	getCommand("forcetitle").setExecutor(new forceTitle(this));
 
 	PluginManager pm = getServer().getPluginManager();

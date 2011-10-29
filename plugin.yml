@@ -1,6 +1,6 @@
 name: FantasyRaces
 main: net.gamerservices.fantasyraces.fantasyraces
-version: 0.04
+version: 0.05
 website: http://www.gamerservices.net
 author: Mixxit
 database: true
@@ -25,7 +25,13 @@ commands:
     description: Finds a name
     usage: |
            /<command> [name]
-           Example: /<command> Michael          
+           Example: /<command> Michael       
+  finddisplayname:
+    aliases: [finddisplayplayer]
+    description: Finds a display name
+    usage: |
+           /<command> [name]
+           Example: /<command> Michael    
   forcetitle:
     aliases: [forceplayertitle]
     description: Sets a players title
