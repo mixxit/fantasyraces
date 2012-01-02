@@ -1,6 +1,6 @@
 name: FantasyRaces
 main: net.gamerservices.fantasyraces.fantasyraces
-version: 0.05
+version: 0.06
 website: http://www.gamerservices.net
 author: Mixxit
 database: true
