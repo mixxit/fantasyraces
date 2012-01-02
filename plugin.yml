@@ -13,7 +13,7 @@ commands:
     description: Sets your current race
     usage: |
            /<command> [race]
-           Example: /<command> Mysmaal
+           Example: /<command> Human
   name:
     aliases: [setname]
     description: Sets your current name

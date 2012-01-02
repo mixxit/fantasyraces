@@ -48,7 +48,7 @@
 /*    */ 
 /* 48 */     int matchcount = 0;
 /* 49 */     String targetrace = args[0].toLowerCase();
-/* 50 */     String[] races = { "endol", "meroei", "taxicost", "mysmaal", "vishim", "eusebian", "eiao", "garuda", "lidkim", "gialon", "chunel", "rauklete", "taktevolken", "zahnfe", "setagn" };
+/* 50 */     String[] races = { "human", "elf", "darkelf", "halfelf", "dwarf", "vampire", "orc", "lizardman", "goblin", "gnome", "halfdragon", "clockwork", "birdman", "halfling", "werewolf" };
 /* 51 */     for (String rs : races)
 /*    */     {
 /* 53 */       if (!rs.equals(targetrace))
@@ -59,8 +59,7 @@
 /* 59 */     if (matchcount < 1)
 /*    */     {
 /* 61 */       player.sendMessage(ChatColor.RED + "That is not a valid race");
-/* 62 */       player.sendMessage(ChatColor.RED + "Valid races are: " + "Endol, " + "Meroei, " + "Taxicost, " + "Mysmaal, " + "Vishim, " + "Eusebian, " + "Eiao, " + "Garuda, " + "Lidkim, " + "Gialon, " + "Chunel, " + "Rauklete, " + "Taktevolken, " + "Zahnfe, " + "Setagn");
-/* 63 */       player.sendMessage(ChatColor.RED + "Please see http://www.soliniaonline.com/races for more information");
+/* 62 */       player.sendMessage(ChatColor.RED + "Valid races are: Human, Elf, Darkelf, Halfelf, Dwarf, Vampire, Orc, Lizardman, Goblin, Gnome, Halfdragon, Clockwork, Birdman, Halfling, Werewolf");
 /* 64 */       return false;
 /*    */     }
 /*    */ 
@@ -79,6 +78,7 @@
 /*    */ 
 /* 83 */     player.setDisplayName("[" + this.plugin.capitalise(sPlayer.getRace()) + "] " + this.plugin.capitalise(sPlayer.getDisplay()) + " " + sPlayer.getTitle());
 /* 84 */     player.sendMessage("Your race is now: " + args[0]);
+/* 84 */     player.sendMessage("Perhaps now would be a good time to find a race skin on the skindex or planetminecraft for " + args[0]);
 /* 85 */     return true;
 /*    */   }
 /*    */ }

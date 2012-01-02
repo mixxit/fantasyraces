@@ -19,12 +19,14 @@ private final fantasyraces plugin;
 	
 	public void onPlayerMove(PlayerMoveEvent event)
 	{
-	/* 17 */     sqlPlayer sPlayer = (sqlPlayer)this.plugin.getDatabase().find(sqlPlayer.class).where().ieq("name", event.getPlayer().getName()).findUnique();
-	/* 18 */     if (sPlayer == null) {
-	/* 19 */       event.getPlayer().teleport(event.getFrom());
-	/* 20 */       event.getPlayer().sendMessage("You cannot move until you set a player race with the /race command");
-	
-	  }
+		/*
+	    sqlPlayer sPlayer = (sqlPlayer)this.plugin.getDatabase().find(sqlPlayer.class).where().ieq("name", event.getPlayer().getName()).findUnique();
+	    if (sPlayer == null) {
+	      event.getPlayer().teleport(event.getFrom());
+	      event.getPlayer().sendMessage("You cannot move until you set a player race with the /race command (ie /race Human) for a full list use /race list");
+		
+		  }
+		  */
 	}
 	
 	public void onPlayerJoin(PlayerJoinEvent event)
